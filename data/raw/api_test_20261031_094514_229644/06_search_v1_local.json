@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:45:15.113117+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/local",
+  "request": {
+    "query": "부동산 입지 분석",
+    "format": "json",
+    "display": 5,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:45:15 +0900\",\n\t\"total\":5,\n\t\"start\":1,\n\t\"display\":5,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"스타힐<b>부동산<\\/b>중개법인\",\n\t\t\t\"link\":\"http:\\/\\/www.gdrhill.com\",\n\t\t\t\"category\":\"부동산>중개업\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"서울특별시 강남구 역삼동 649-4 한덕빌딩 2층\",\n\t\t\t\"roadAddress\":\"서울특별시 강남구 테헤란로7길 11 한덕빌딩 2층\",\n\t\t\t\"mapx\":\"1270304055\",\n\t\t\t\"mapy\":\"374998944\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"메디굿<b>부동산<\\/b>중개법인\",\n\t\t\t\"link\":\"\",\n\t\t\t\"category\":\"부동산>중개업\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"서울특별시 서초구 서초동 1698-10 3층 302호\",\n\t\t\t\"roadAddress\":\"서울특별시 서초구 서초대로53길 21 3층 302호\",\n\t\t\t\"mapx\":\"1270144002\",\n\t\t\t\"mapy\":\"374960527\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"행복집<b>부동산<\\/b>공인중개사사무소\",\n\t\t\t\"link\":\"\",\n\t\t\t\"category\":\"부동산>중개업\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"서울특별시 동대문구 이문동 255-205 1층 3호\",\n\t\t\t\"roadAddress\":\"서울특별시 동대문구 신이문로 10 1층 3호\",\n\t\t\t\"mapx\":\"1270632600\",\n\t\t\t\"mapy\":\"376028649\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"뉴옥션\",\n\t\t\t\"link\":\"http:\\/\\/newaction.kr\\/\",\n\t\t\t\"category\":\"부동산>경매\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"서울특별시 강남구 역삼동 641-16\",\n\t\t\t\"roadAddress\":\"서울특별시 강남구 테헤란로25길 28\",\n\t\t\t\"mapx\":\"1270354010\",\n\t\t\t\"mapy\":\"375023839\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"라온공인중개사사무소\",\n\t\t\t\"link\":\"\",\n\t\t\t\"category\":\"부동산>중개업\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"서울특별시 중랑구 묵동 240-1 1층\",\n\t\t\t\"roadAddress\":\"서울특별시 중랑구 중랑역로 205 1층\",\n\t\t\t\"mapx\":\"1270756290\",\n\t\t\t\"mapy\":\"376117991\"\n\t\t}\n\t]\n}"
+}

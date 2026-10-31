@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:27.309315+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/news",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:27 +0900\",\n\t\"total\":2447759,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"해커스, 오늘 지방직 7급 공무원 시험 직후 점수 확인 가능\",\n\t\t\t\"originallink\":\"https:\\/\\/www.gosiweek.com\\/article\\/1065577893473151\",\n\t\t\t\"link\":\"https:\\/\\/www.gosiweek.com\\/article\\/1065577893473151\",\n\t\t\t\"description\":\"정해진 시간 내 채점하고 응시표 인증을 완료하면 조건에 따라 네이버페이 등 다양한 *혜택이 제공되며, 애플워치 SE3, 닌텐도 스위치 라이트, 네스프레소 <b>커피<\\/b>머신 등도 추첨을 통해 증정된다. 또한 추가로 풀서비스... \",\n\t\t\t\"pubDate\":\"Sat, 31 Oct 2026 09:36:00 +0900\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"[쉘위댄스] 아마존·애플 광고의 메시지가 된 춤\",\n\t\t\t\"originallink\":\"http:\\/\\/www.opinionnews.co.kr\\/news\\/articleView.html?idxno=146389\",\n\t\t\t\"link\":\"http:\\/\\/www.opinionnews.co.kr\\/news\\/articleView.html?idxno=146389\",\n\t\t\t\"description\":\"유명 무용수의 춤이든, 팝적인 자유로운 움직임이든 우리는 자동차, <b>커피<\\/b>, 휴대폰 등 광고 속에서 춤을 어렵지 않게 만난다. 슬로모션으로 동작의 찰나를 강조하거나, 신체의 움직임으로 인물의 감정을 드러내는 장면도... \",\n\t\t\t\"pubDate\":\"Sat, 31 Oct 2026 09:30:00 +0900\"\n\t\t}\n\t]\n}"
+}

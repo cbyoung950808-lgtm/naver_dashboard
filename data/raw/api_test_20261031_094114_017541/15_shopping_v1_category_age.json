@@ -1,0 +1,12 @@
+{
+  "collected_at": "2026-10-31T09:41:14.055804+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/shopping/v1/category/age",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "category": "50000000"
+  },
+  "network_error": "ConnectionError"
+}

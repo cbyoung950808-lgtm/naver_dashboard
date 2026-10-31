@@ -1,0 +1,9 @@
+﻿group,api,method,endpoint,http_status,result,records,total,detail,collected_at,raw_file
+검색,뉴스,GET,/search/v1/news,200,성공,10,165,,2026-10-31T09:48:49.995186+09:00,data/raw/api_test_20261031_094849_994552/01_search_v1_news.json
+검색,백과사전,GET,/search/v1/encyc,200,성공(빈 결과),0,0,,2026-10-31T09:48:50.124627+09:00,data/raw/api_test_20261031_094849_994552/02_search_v1_encyc.json
+검색,블로그,GET,/search/v1/blog,200,성공,10,66558,,2026-10-31T09:48:50.203592+09:00,data/raw/api_test_20261031_094849_994552/03_search_v1_blog.json
+검색,웹 문서,GET,/search/v1/webkr,200,성공,10,656535,,2026-10-31T09:48:50.428330+09:00,data/raw/api_test_20261031_094849_994552/04_search_v1_webkr.json
+검색,지식iN,GET,/search/v1/kin,200,성공,10,2067,,2026-10-31T09:48:50.622886+09:00,data/raw/api_test_20261031_094849_994552/05_search_v1_kin.json
+검색,지역,GET,/search/v1/local,200,성공(빈 결과),0,5,,2026-10-31T09:48:50.822856+09:00,data/raw/api_test_20261031_094849_994552/06_search_v1_local.json
+검색,카페글,GET,/search/v1/cafearticle,200,성공,10,13360,,2026-10-31T09:48:50.927759+09:00,data/raw/api_test_20261031_094849_994552/07_search_v1_cafearticle.json
+검색어 트렌드,검색어 트렌드,POST,/search-trend/v1/search,200,성공,88,,,2026-10-31T09:48:51.120723+09:00,data/raw/api_test_20261031_094849_994552/08_search-trend_v1_search.json

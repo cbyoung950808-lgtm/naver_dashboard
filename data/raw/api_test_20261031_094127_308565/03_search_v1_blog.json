@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:27.531459+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/blog",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:27 +0900\",\n\t\"total\":66226171,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"전자동 <b>커피<\\/b>머신기 셀프 세척 방법 필립스<b>커피<\\/b>머신구리스 필립스 22....\",\n\t\t\t\"link\":\"https:\\/\\/blog.naver.com\\/loo_loo123\\/224391747946\",\n\t\t\t\"description\":\"7월달에 필립스 2200 시리즈 전자동 <b>커피<\\/b>머신 후기를 올린 적 있는데... 근데 이번에 필립스<b>커피<\\/b>머신구리스를 보고 청소키트가 따로 있네... 그리고 더 늦기 전에 해서 다행이다 ,,싶었던 전자동 <b>커피<\\/b>머신기 셀프... \",\n\t\t\t\"bloggername\":\"원주맛집 · 원주카페 · 강원도여행은 캠레이더\",\n\t\t\t\"bloggerlink\":\"https:\\/\\/blog.naver.com\\/loo_loo123\",\n\t\t\t\"postdate\":\"20260827\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"콜레스테롤 높은데 <b>커피<\\/b> 마셔도 되나요? 가려 마셔야 하는 이유. 커....\",\n\t\t\t\"link\":\"https:\\/\\/blog.naver.com\\/nerve2016\\/224406506653\",\n\t\t\t\"description\":\"콜레스테롤 높다면 <b>커피<\\/b>도 가려 마셔야 할까? “<b>커피<\\/b> 대신 드립<b>커피<\\/b>를 마시세요”라는 말이 나오는 이유 “콜레스테롤이 높은데 <b>커피<\\/b> 마셔도 괜찮을까요?” 몇년 전 건강검진에서 콜레스테롤이 높아서 약을... \",\n\t\t\t\"bloggername\":\"건강하게 자라다오~\",\n\t\t\t\"bloggerlink\":\"https:\\/\\/blog.naver.com\\/nerve2016\",\n\t\t\t\"postdate\":\"20260909\"\n\t\t}\n\t]\n}"
+}

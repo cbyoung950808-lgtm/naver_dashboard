@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:28.287657+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/local",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:28 +0900\",\n\t\"total\":2,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"카페 이진리\",\n\t\t\t\"link\":\"https:\\/\\/bio.site\\/easily\",\n\t\t\t\"category\":\"음식점>카페,디저트\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"강원특별자치도 강릉시 교동 191-30 이진리\",\n\t\t\t\"roadAddress\":\"강원특별자치도 강릉시 임영로 234 이진리\",\n\t\t\t\"mapx\":\"1288925458\",\n\t\t\t\"mapy\":\"377620503\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"평화와평화\",\n\t\t\t\"link\":\"https:\\/\\/smartstore.naver.com\\/peaceorpeace\",\n\t\t\t\"category\":\"음식점>카페,디저트\",\n\t\t\t\"description\":\"\",\n\t\t\t\"telephone\":\"\",\n\t\t\t\"address\":\"전북특별자치도 전주시 완산구 중앙동3가 29 3층\",\n\t\t\t\"roadAddress\":\"전북특별자치도 전주시 완산구 전라감영4길 16-7 3층\",\n\t\t\t\"mapx\":\"1271448925\",\n\t\t\t\"mapy\":\"358170500\"\n\t\t}\n\t]\n}"
+}

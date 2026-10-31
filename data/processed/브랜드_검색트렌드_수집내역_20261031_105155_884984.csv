@@ -1,0 +1,14 @@
+﻿구분,세그먼트,HTTP,관측수,원본 파일
+전체,전체,200,96,data/raw/brand_search_trends_20261031_105155_884984/01.json
+연령,13~18세,200,96,data/raw/brand_search_trends_20261031_105155_884984/02.json
+연령,19~24세,200,96,data/raw/brand_search_trends_20261031_105155_884984/03.json
+연령,25~29세,200,96,data/raw/brand_search_trends_20261031_105155_884984/04.json
+연령,30~39세,200,96,data/raw/brand_search_trends_20261031_105155_884984/05.json
+연령,40~49세,200,96,data/raw/brand_search_trends_20261031_105155_884984/06.json
+연령,50~59세,200,96,data/raw/brand_search_trends_20261031_105155_884984/07.json
+연령,60세 이상,200,96,data/raw/brand_search_trends_20261031_105155_884984/08.json
+성별,남성,200,96,data/raw/brand_search_trends_20261031_105155_884984/09.json
+성별,여성,200,96,data/raw/brand_search_trends_20261031_105155_884984/10.json
+기기,PC,200,96,data/raw/brand_search_trends_20261031_105155_884984/11.json
+기기,모바일,200,96,data/raw/brand_search_trends_20261031_105155_884984/12.json
+보완조회,탑텐 보완어,200,96,data/raw/brand_search_trends_20261031_105155_884984/13.json

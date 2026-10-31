@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:28.046344+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/kin",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:28 +0900\",\n\t\"total\":3033335,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b>추천해주세요\",\n\t\t\t\"link\":\"https:\\/\\/kin.naver.com\\/qna\\/detail.naver?dirId=8020306&docId=495621668&answerNo=2\",\n\t\t\t\"description\":\"달달하고 부드러운 바닐라 <b>커피<\\/b>를 좋아하시면 잘 맞을 것 같아요. 할리스 바닐라 딜라이트는 바닐라 향과 <b>커피<\\/b> 풍미가 어우러진 달콤한 라떼가 특징이라, 카페에서 즐기는 느낌을 원하신다면 추천합니다. 그 외에 달달한 <b>커피<\\/b>를 좋아하시면...\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b>추천해주세요\",\n\t\t\t\"link\":\"https:\\/\\/kin.naver.com\\/qna\\/detail.naver?dirId=8020306&docId=495621668&answerNo=3\",\n\t\t\t\"description\":\"소풍갈때 어울리는 <b>커피<\\/b> 안내드려요. 소풍갈때 휴대하기 좋은 <b>커피<\\/b>때문에 고민한적이 있을거에요. 소풍용으로는 바리스타룰스 바닐라빈 라떼가 더 적합해 보여요. 325밀리리터 컵형이라 휴대하기 편하고 맛 평가도 괜찮은 편이구요.\"\n\t\t}\n\t]\n}"
+}

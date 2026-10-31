@@ -1,0 +1,12 @@
+{
+  "collected_at": "2026-10-31T09:41:14.030706+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/blog",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "network_error": "ConnectionError"
+}

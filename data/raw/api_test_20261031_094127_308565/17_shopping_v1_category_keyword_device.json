@@ -1,0 +1,14 @@
+{
+  "collected_at": "2026-10-31T09:41:29.067623+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/shopping/v1/category/keyword/device",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "category": "50000000",
+    "keyword": "정장"
+  },
+  "http_status": 200,
+  "response_text": "{\"startDate\":\"2026-10-23\",\"endDate\":\"2026-10-29\",\"timeUnit\":\"date\",\"results\":[{\"title\":\"정장\",\"keyword\":[\"정장\"],\"data\":[{\"period\":\"2026-10-23\",\"ratio\":50.64935,\"group\":\"mo\"},{\"period\":\"2026-10-23\",\"ratio\":40.25974,\"group\":\"pc\"},{\"period\":\"2026-10-24\",\"ratio\":48.05194,\"group\":\"mo\"},{\"period\":\"2026-10-24\",\"ratio\":12.98701,\"group\":\"pc\"},{\"period\":\"2026-10-25\",\"ratio\":44.15584,\"group\":\"mo\"},{\"period\":\"2026-10-25\",\"ratio\":15.58441,\"group\":\"pc\"},{\"period\":\"2026-10-26\",\"ratio\":100,\"group\":\"mo\"},{\"period\":\"2026-10-26\",\"ratio\":50.64935,\"group\":\"pc\"},{\"period\":\"2026-10-27\",\"ratio\":42.85714,\"group\":\"mo\"},{\"period\":\"2026-10-27\",\"ratio\":22.07792,\"group\":\"pc\"},{\"period\":\"2026-10-28\",\"ratio\":63.63636,\"group\":\"mo\"},{\"period\":\"2026-10-28\",\"ratio\":10.38961,\"group\":\"pc\"},{\"period\":\"2026-10-29\",\"ratio\":33.76623,\"group\":\"mo\"},{\"period\":\"2026-10-29\",\"ratio\":24.67532,\"group\":\"pc\"}]}]}"
+}

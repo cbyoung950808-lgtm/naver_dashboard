@@ -1,0 +1,11 @@
+{
+  "collected_at": "2026-10-31T09:41:27.741655+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/adult",
+  "request": {
+    "query": "커피",
+    "format": "json"
+  },
+  "http_status": 401,
+  "response_text": "{\"error\":{\"errorCode\":401,\"message\":\"요청한 API는 이 Application에서 활성화되어 있지 않습니다.\"}}"
+}

@@ -1,0 +1,19 @@
+{
+  "collected_at": "2026-10-31T09:41:14.049416+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/shopping/v1/categories",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "category": [
+      {
+        "name": "패션의류",
+        "param": [
+          "50000000"
+        ]
+      }
+    ]
+  },
+  "network_error": "ConnectionError"
+}

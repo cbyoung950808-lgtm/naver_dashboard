@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:48:50.822856+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/local",
+  "request": {
+    "query": "입문용 러닝화",
+    "format": "json",
+    "display": 5,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:48:51 +0900\",\n\t\"total\":5,\n\t\"start\":1,\n\t\"display\":5,\n\t\"items\":[\n\t]\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:28.872981+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/shopping/v1/category/gender",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "category": "50000000"
+  },
+  "http_status": 200,
+  "response_text": "{\"startDate\":\"2026-10-23\",\"endDate\":\"2026-10-29\",\"timeUnit\":\"date\",\"results\":[{\"title\":\"50000000\",\"category\":[\"50000000\"],\"data\":[{\"period\":\"2026-10-23\",\"ratio\":79.57899,\"group\":\"f\"},{\"period\":\"2026-10-23\",\"ratio\":30.30446,\"group\":\"m\"},{\"period\":\"2026-10-24\",\"ratio\":91.05845,\"group\":\"f\"},{\"period\":\"2026-10-24\",\"ratio\":34.94698,\"group\":\"m\"},{\"period\":\"2026-10-25\",\"ratio\":100,\"group\":\"f\"},{\"period\":\"2026-10-25\",\"ratio\":40.48638,\"group\":\"m\"},{\"period\":\"2026-10-26\",\"ratio\":83.70097,\"group\":\"f\"},{\"period\":\"2026-10-26\",\"ratio\":33.0574,\"group\":\"m\"},{\"period\":\"2026-10-27\",\"ratio\":90.03506,\"group\":\"f\"},{\"period\":\"2026-10-27\",\"ratio\":35.91243,\"group\":\"m\"},{\"period\":\"2026-10-28\",\"ratio\":96.23972,\"group\":\"f\"},{\"period\":\"2026-10-28\",\"ratio\":38.10719,\"group\":\"m\"},{\"period\":\"2026-10-29\",\"ratio\":96.28941,\"group\":\"f\"},{\"period\":\"2026-10-29\",\"ratio\":36.74596,\"group\":\"m\"}]}]}"
+}

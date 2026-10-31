@@ -1,0 +1,20 @@
+﻿group,api,method,endpoint,http_status,result,records,detail,collected_at,raw_file
+검색,뉴스,GET,/search/v1/news,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.018310+09:00,data/raw/api_test_20261031_094114_017541/01_search_v1_news.json
+검색,백과사전,GET,/search/v1/encyc,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.027295+09:00,data/raw/api_test_20261031_094114_017541/02_search_v1_encyc.json
+검색,블로그,GET,/search/v1/blog,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.030706+09:00,data/raw/api_test_20261031_094114_017541/03_search_v1_blog.json
+검색,성인 검색어 판별,GET,/search/v1/adult,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.032967+09:00,data/raw/api_test_20261031_094114_017541/04_search_v1_adult.json
+검색,오타 변환,GET,/search/v1/errata,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.035181+09:00,data/raw/api_test_20261031_094114_017541/05_search_v1_errata.json
+검색,웹 문서,GET,/search/v1/webkr,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.037033+09:00,data/raw/api_test_20261031_094114_017541/06_search_v1_webkr.json
+검색,이미지,GET,/search/v1/image,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.039430+09:00,data/raw/api_test_20261031_094114_017541/07_search_v1_image.json
+검색,지식iN,GET,/search/v1/kin,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.041460+09:00,data/raw/api_test_20261031_094114_017541/08_search_v1_kin.json
+검색,지역,GET,/search/v1/local,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.043771+09:00,data/raw/api_test_20261031_094114_017541/09_search_v1_local.json
+검색,카페글,GET,/search/v1/cafearticle,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.045626+09:00,data/raw/api_test_20261031_094114_017541/10_search_v1_cafearticle.json
+검색어 트렌드,검색어 트렌드,POST,/search-trend/v1/search,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.047393+09:00,data/raw/api_test_20261031_094114_017541/11_search-trend_v1_search.json
+쇼핑 인사이트,분야별,POST,/shopping/v1/categories,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.049416+09:00,data/raw/api_test_20261031_094114_017541/12_shopping_v1_categories.json
+쇼핑 인사이트,기기별,POST,/shopping/v1/category/device,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.051666+09:00,data/raw/api_test_20261031_094114_017541/13_shopping_v1_category_device.json
+쇼핑 인사이트,성별,POST,/shopping/v1/category/gender,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.054114+09:00,data/raw/api_test_20261031_094114_017541/14_shopping_v1_category_gender.json
+쇼핑 인사이트,연령별,POST,/shopping/v1/category/age,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.055804+09:00,data/raw/api_test_20261031_094114_017541/15_shopping_v1_category_age.json
+쇼핑 인사이트,키워드별,POST,/shopping/v1/category/keywords,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.057442+09:00,data/raw/api_test_20261031_094114_017541/16_shopping_v1_category_keywords.json
+쇼핑 인사이트,키워드 기기별,POST,/shopping/v1/category/keyword/device,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.059482+09:00,data/raw/api_test_20261031_094114_017541/17_shopping_v1_category_keyword_device.json
+쇼핑 인사이트,키워드 성별,POST,/shopping/v1/category/keyword/gender,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.061179+09:00,data/raw/api_test_20261031_094114_017541/18_shopping_v1_category_keyword_gender.json
+쇼핑 인사이트,키워드 연령별,POST,/shopping/v1/category/keyword/age,,통신 실패,0,ConnectionError,2026-10-31T09:41:14.063329+09:00,data/raw/api_test_20261031_094114_017541/19_shopping_v1_category_keyword_age.json

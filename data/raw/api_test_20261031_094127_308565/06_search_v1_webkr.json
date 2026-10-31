@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:27.818341+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/webkr",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:28 +0900\",\n\t\"total\":78709639,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b> - 나무위키\",\n\t\t\t\"link\":\"https:\\/\\/namu.wiki\\/w\\/%EC%BB%A4%ED%94%BC\",\n\t\t\t\"description\":\"Coffee <b>커피<\\/b>나무 열매의 씨앗(원두)을 볶아 향을 내고, 딱딱한 씨앗의 성분이 물에 잘 우러나오도록 갈은 뒤, 물에 타서 마시는 음료다.\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b> - 위키백과 한국어\",\n\t\t\t\"link\":\"https:\\/\\/ko.wikipedia.org\\/wiki\\/%EC%BB%A4%ED%94%BC\",\n\t\t\t\"description\":\"<b>커피<\\/b> ( 영어: coffee , 咖啡, 珈琲, 가배, 문화어: 흑차, 검은차), <b>커피<\\/b>차 또는 <b>커피<\\/b>음료 ( 영어: coffee beverage )는 <b>커피<\\/b> 나무 열매의 씨(<b>커피<\\/b>콩)를 볶아 가루로 낸 것을 따뜻한 물과 차가운 물 또는 증기로 우려내어 마시는, 쓴맛....\"\n\t\t}\n\t]\n}"
+}

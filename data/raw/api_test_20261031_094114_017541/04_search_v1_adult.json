@@ -1,0 +1,10 @@
+{
+  "collected_at": "2026-10-31T09:41:14.032967+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/adult",
+  "request": {
+    "query": "커피",
+    "format": "json"
+  },
+  "network_error": "ConnectionError"
+}

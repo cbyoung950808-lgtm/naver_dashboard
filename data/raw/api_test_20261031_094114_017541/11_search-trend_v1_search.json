@@ -1,0 +1,25 @@
+{
+  "collected_at": "2026-10-31T09:41:14.047393+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/search-trend/v1/search",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "keywordGroups": [
+      {
+        "groupName": "커피",
+        "keywords": [
+          "커피"
+        ]
+      },
+      {
+        "groupName": "차",
+        "keywords": [
+          "녹차"
+        ]
+      }
+    ]
+  },
+  "network_error": "ConnectionError"
+}

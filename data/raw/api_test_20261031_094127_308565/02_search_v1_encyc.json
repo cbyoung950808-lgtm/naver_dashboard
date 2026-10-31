@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:27.464589+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/encyc",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:27 +0900\",\n\t\"total\":8071,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b>\",\n\t\t\t\"link\":\"https:\\/\\/terms.naver.com\\/entry.naver?docId=1596581&cid=50346&categoryId=50346\",\n\t\t\t\"description\":\"<b>커피<\\/b>영양학사전 <b>커피<\\/b>콩을 볶아 분쇄하여, 독특한 빛깔과 풍미를 뜨거운 물로 추출한 기호음료. 추출액을 분무건조 또는 동결건조로 분말화하면 인스턴트 <b>커피<\\/b>(instant coffee)가 된다. 카페인의 각성 \",\n\t\t\t\"thumbnail\":\"\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"<b>커피<\\/b>\",\n\t\t\t\"link\":\"https:\\/\\/terms.naver.com\\/entry.naver?docId=3572338&cid=58988&categoryId=58988\",\n\t\t\t\"description\":\"2000년대 들어서부터 사람들이 모이는 장소에 <b>커피<\\/b> 한잔은 빼놓을 수 없을 정도로 <b>커피<\\/b>는 대중적인 음료로 자리잡았다. 이제는 프랜차이즈 <b>커피<\\/b> 전문점이 2000개가 넘어섰을 정도로 <b>커피<\\/b>에 대한 관 \",\n\t\t\t\"thumbnail\":\"http:\\/\\/openapi-dbscthumb.phinf.naver.net\\/4749_000_5\\/20170316145457666_J4BH4NW44.jpg\\/02_0.jpg?type=m160_160\"\n\t\t}\n\t]\n}"
+}

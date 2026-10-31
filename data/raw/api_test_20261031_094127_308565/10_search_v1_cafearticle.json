@@ -1,0 +1,13 @@
+{
+  "collected_at": "2026-10-31T09:41:28.418361+09:00",
+  "method": "GET",
+  "url": "https://naverapihub.apigw.ntruss.com/search/v1/cafearticle",
+  "request": {
+    "query": "커피",
+    "format": "json",
+    "display": 2,
+    "start": 1
+  },
+  "http_status": 200,
+  "response_text": "{\n\t\"lastBuildDate\":\"Sat, 31 Oct 2026 09:41:28 +0900\",\n\t\"total\":25141049,\n\t\"start\":1,\n\t\"display\":2,\n\t\"items\":[\n\t\t{\n\t\t\t\"title\":\"CU<b>커피<\\/b> 할인 문의드려요.\",\n\t\t\t\"link\":\"https:\\/\\/cafe.naver.com\\/skybluezw4rh\\/14836627\",\n\t\t\t\"description\":\"뭐가 바껴서 get<b>커피<\\/b> xl 아이스아메 2개 사고 cu qr찍고 skt멤버쉽(실버) 찍고 쏠페이바코드결제 하려고 했는데 알바생이 cu qr이랑 skt중복으로 못찍는대서요. 순서 바꿔서 찍어도 안된대요. 어떤 맘님이 저렇게... \",\n\t\t\t\"cafename\":\"맘이베베 (핫딜, 육아, 놀이)\",\n\t\t\t\"cafeurl\":\"https:\\/\\/cafe.naver.com\\/skybluezw4rh\"\n\t\t},\n\t\t{\n\t\t\t\"title\":\"어린이집 <b>커피<\\/b> 몇시쯤\",\n\t\t\t\"link\":\"https:\\/\\/cafe.naver.com\\/imsanbu\\/79856531\",\n\t\t\t\"description\":\"0세 1세반 가정어린이집이에요 내일 <b>커피<\\/b> 좀 사서 드릴려고 하는데 몇시쯤 드려야 그래도 바로 마실 수 있을까요? 카페라떼 드리면 다 녹아서 나중에 먹는다는 글도 본 적 있어서요ㅜㅜ 12:30분 아이들 낮잠시간 10... \",\n\t\t\t\"cafename\":\"맘스홀릭 베이비 (370만 엄마들의 임신, 육아 지식in 카페)\",\n\t\t\t\"cafeurl\":\"https:\\/\\/cafe.naver.com\\/imsanbu\"\n\t\t}\n\t]\n}"
+}

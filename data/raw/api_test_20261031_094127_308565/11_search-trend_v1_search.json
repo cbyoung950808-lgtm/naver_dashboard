@@ -1,0 +1,26 @@
+{
+  "collected_at": "2026-10-31T09:41:28.600742+09:00",
+  "method": "POST",
+  "url": "https://naverapihub.apigw.ntruss.com/search-trend/v1/search",
+  "request": {
+    "startDate": "2026-10-23",
+    "endDate": "2026-10-29",
+    "timeUnit": "date",
+    "keywordGroups": [
+      {
+        "groupName": "커피",
+        "keywords": [
+          "커피"
+        ]
+      },
+      {
+        "groupName": "차",
+        "keywords": [
+          "녹차"
+        ]
+      }
+    ]
+  },
+  "http_status": 200,
+  "response_text": "{\"startDate\":\"2026-10-23\",\"endDate\":\"2026-10-29\",\"timeUnit\":\"date\",\"results\":[{\"title\":\"커피\",\"keywords\":[\"커피\"],\"data\":[{\"period\":\"2026-10-23\",\"ratio\":73.21428},{\"period\":\"2026-10-24\",\"ratio\":100},{\"period\":\"2026-10-25\",\"ratio\":96.36402},{\"period\":\"2026-10-26\",\"ratio\":62.01592},{\"period\":\"2026-10-27\",\"ratio\":64.84509},{\"period\":\"2026-10-28\",\"ratio\":66.23278},{\"period\":\"2026-10-29\",\"ratio\":63.54345}]},{\"title\":\"차\",\"keywords\":[\"녹차\"],\"data\":[{\"period\":\"2026-10-23\",\"ratio\":21.1166},{\"period\":\"2026-10-24\",\"ratio\":18.21213},{\"period\":\"2026-10-25\",\"ratio\":18.93287},{\"period\":\"2026-10-26\",\"ratio\":18.06153},{\"period\":\"2026-10-27\",\"ratio\":21.08433},{\"period\":\"2026-10-28\",\"ratio\":19.79345},{\"period\":\"2026-10-29\",\"ratio\":17.72805}]}]}"
+}

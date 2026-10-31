@@ -1,0 +1,20 @@
+﻿group,api,method,endpoint,http_status,result,records,detail,collected_at,raw_file
+검색,뉴스,GET,/search/v1/news,200,성공,2,,2026-10-31T09:41:27.309315+09:00,data/raw/api_test_20261031_094127_308565/01_search_v1_news.json
+검색,백과사전,GET,/search/v1/encyc,200,성공,2,,2026-10-31T09:41:27.464589+09:00,data/raw/api_test_20261031_094127_308565/02_search_v1_encyc.json
+검색,블로그,GET,/search/v1/blog,200,성공,2,,2026-10-31T09:41:27.531459+09:00,data/raw/api_test_20261031_094127_308565/03_search_v1_blog.json
+검색,성인 검색어 판별,GET,/search/v1/adult,401,HTTP 오류,0,"{""error"":{""errorCode"":401,""message"":""요청한 API는 이 Application에서 활성화되어 있지 않습니다.""}}",2026-10-31T09:41:27.741655+09:00,data/raw/api_test_20261031_094127_308565/04_search_v1_adult.json
+검색,오타 변환,GET,/search/v1/errata,401,HTTP 오류,0,"{""error"":{""errorCode"":401,""message"":""요청한 API는 이 Application에서 활성화되어 있지 않습니다.""}}",2026-10-31T09:41:27.779603+09:00,data/raw/api_test_20261031_094127_308565/05_search_v1_errata.json
+검색,웹 문서,GET,/search/v1/webkr,200,성공,2,,2026-10-31T09:41:27.818341+09:00,data/raw/api_test_20261031_094127_308565/06_search_v1_webkr.json
+검색,이미지,GET,/search/v1/image,401,HTTP 오류,0,"{""error"":{""errorCode"":401,""message"":""요청한 API는 이 Application에서 활성화되어 있지 않습니다.""}}",2026-10-31T09:41:28.011353+09:00,data/raw/api_test_20261031_094127_308565/07_search_v1_image.json
+검색,지식iN,GET,/search/v1/kin,200,성공,2,,2026-10-31T09:41:28.046344+09:00,data/raw/api_test_20261031_094127_308565/08_search_v1_kin.json
+검색,지역,GET,/search/v1/local,200,성공,2,,2026-10-31T09:41:28.287657+09:00,data/raw/api_test_20261031_094127_308565/09_search_v1_local.json
+검색,카페글,GET,/search/v1/cafearticle,200,성공,2,,2026-10-31T09:41:28.418361+09:00,data/raw/api_test_20261031_094127_308565/10_search_v1_cafearticle.json
+검색어 트렌드,검색어 트렌드,POST,/search-trend/v1/search,200,성공,14,,2026-10-31T09:41:28.600742+09:00,data/raw/api_test_20261031_094127_308565/11_search-trend_v1_search.json
+쇼핑 인사이트,분야별,POST,/shopping/v1/categories,200,성공,7,,2026-10-31T09:41:28.735830+09:00,data/raw/api_test_20261031_094127_308565/12_shopping_v1_categories.json
+쇼핑 인사이트,기기별,POST,/shopping/v1/category/device,200,성공,14,,2026-10-31T09:41:28.794039+09:00,data/raw/api_test_20261031_094127_308565/13_shopping_v1_category_device.json
+쇼핑 인사이트,성별,POST,/shopping/v1/category/gender,200,성공,14,,2026-10-31T09:41:28.872981+09:00,data/raw/api_test_20261031_094127_308565/14_shopping_v1_category_gender.json
+쇼핑 인사이트,연령별,POST,/shopping/v1/category/age,200,성공,42,,2026-10-31T09:41:28.918041+09:00,data/raw/api_test_20261031_094127_308565/15_shopping_v1_category_age.json
+쇼핑 인사이트,키워드별,POST,/shopping/v1/category/keywords,200,성공,7,,2026-10-31T09:41:28.991248+09:00,data/raw/api_test_20261031_094127_308565/16_shopping_v1_category_keywords.json
+쇼핑 인사이트,키워드 기기별,POST,/shopping/v1/category/keyword/device,200,성공,14,,2026-10-31T09:41:29.067623+09:00,data/raw/api_test_20261031_094127_308565/17_shopping_v1_category_keyword_device.json
+쇼핑 인사이트,키워드 성별,POST,/shopping/v1/category/keyword/gender,200,성공,14,,2026-10-31T09:41:29.146043+09:00,data/raw/api_test_20261031_094127_308565/18_shopping_v1_category_keyword_gender.json
+쇼핑 인사이트,키워드 연령별,POST,/shopping/v1/category/keyword/age,200,성공,32,,2026-10-31T09:41:29.215685+09:00,data/raw/api_test_20261031_094127_308565/19_shopping_v1_category_keyword_age.json
