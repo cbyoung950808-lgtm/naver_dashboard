@@ -1,5 +1,6 @@
-"""실행: .venv-nlp/bin/python -m streamlit run app.py
-저장된 분석 결과만 조회하는 로컬 대시보드. 인증키를 읽거나 외부 API를 호출하지 않는다.
+"""실행: python -m streamlit run app.py
+Python 3.12 / pip install -r requirements.txt
+저장된 분석 결과를 조회하는 대시보드. API 키·로컬 폰트·분석 패키지가 필요하지 않다.
 """
 from pathlib import Path
 import json

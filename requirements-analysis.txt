@@ -1,0 +1,10 @@
+# 데이터 재수집·분석 재실행이 필요한 로컬 환경에서만 설치한다.
+# python -m pip install -r requirements-analysis.txt
+-r requirements.txt
+requests==2.34.2
+python-dotenv==1.2.4
+numpy==2.5.4
+matplotlib==3.11.2
+scikit-learn==1.9.1
+wordcloud==1.9.6
+kiwipiepy==0.24.1
