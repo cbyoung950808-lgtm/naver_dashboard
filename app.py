@@ -13,18 +13,26 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data/processed"
 BRANDS = ["유니클로", "스파오", "탑텐", "무신사 스탠다드"]
 TOPICS = ["제품 출시", "협업", "할인 혹은 행사", "실적 또는 사업", "기타"]
-COLORS = dict(zip(BRANDS, ["#2563A6", "#D77B21", "#258565", "#8050A2"]))
+COLORS = dict(zip(BRANDS, ["#B42332", "#B65C16", "#176B55", "#343D4B"]))
 TOPIC_COLORS = dict(zip(TOPICS, ["#528AC0", "#8A70AF", "#E3A254", "#4C9D8A", "#9DAAB8"]))
 SHARE = "네브랜드 내 월별 검색지수 비중_pct"
 RECENT_SHARE = "최근12개월 네브랜드 내 비중_pct"
 YOY = "최근12개월 전년동기대비_pct"
-st.set_page_config(page_title="K-SPA | 경쟁사 인사이트", page_icon="📊", layout="wide")
+st.set_page_config(page_title="K-SPA | 경쟁사 인사이트", page_icon="◼", layout="wide")
 st.markdown("""<style>
-.block-container {padding-top:2rem; padding-bottom:3rem; max-width:1600px;}
-[data-testid="stMetric"] {background:white; padding:1.05rem 1.2rem; border-radius:12px; border:1px solid #E3EAF1;}
+.block-container {padding-top:2rem; padding-bottom:3rem; max-width:1440px;}
+[data-testid="stMetric"] {background:white; padding:1.05rem 1.2rem; border-radius:6px; border:1px solid #E3EAF1;}
 [data-testid="stMetricValue"] {font-size:1.85rem;}
 h1 {letter-spacing:-1.4px;} h2,h3 {letter-spacing:-.5px;}
 [data-testid="stSidebar"] {border-right:1px solid #E3EAF1;}
+.report-context {border-top:3px solid #202C3B; border-bottom:1px solid #D5DBE3;
+ padding:14px 0; margin-bottom:24px; color:#344054; font-size:.9rem; line-height:1.8;}
+.report-label {font-size:.75rem; letter-spacing:2px; font-weight:700; color:#667085;}
+@media print {
+ [data-testid="stSidebar"], [data-testid="stToolbar"], [data-testid="stDownloadButton"] {display:none!important;}
+ .block-container {max-width:100%; padding:0!important;}
+ [data-testid="stMetric"], [data-testid="stPlotlyChart"] {break-inside:avoid;}
+}
 </style>""", unsafe_allow_html=True)
 
 
@@ -48,7 +56,7 @@ def download(frame, name, label="CSV 다운로드", key=None):
 
 def polish(fig, height=420, ytitle=None):
     fig.update_layout(height=height, margin=dict(l=12, r=20, t=25, b=15),
-                      font=dict(family="Arial, sans-serif", color="#172B40"),
+                      font=dict(family="Arial, Noto Sans KR, sans-serif", color="#243247"),
                       paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
                       legend=dict(title_text="", orientation="h", y=1.12, x=0),
                       hovermode="x unified")
@@ -59,7 +67,7 @@ def polish(fig, height=420, ytitle=None):
 
 def line(frame, value, ytitle, height=400):
     fig = px.line(frame, x="월", y=value, color="브랜드", color_discrete_map=COLORS,
-                  category_orders={"브랜드": BRANDS}, markers=True)
+                  category_orders={"브랜드": BRANDS}, markers=True, line_dash="브랜드", symbol="브랜드")
     fig.update_traces(line_width=2.4, marker_size=5,
                       hovertemplate="%{x}<br>%{y:.2f}<extra>%{fullData.name}</extra>")
     return polish(fig, height, ytitle)
@@ -68,12 +76,12 @@ def line(frame, value, ytitle, height=400):
 def metrics(frame):
     for col, (_, r) in zip(st.columns(len(frame)), frame.iterrows()):
         with col:
-            st.metric(r["브랜드"], f"{r[RECENT_SHARE]:.1f}%", f"{r[YOY]:+.1f}% 전년 대비")
+            st.metric(r["브랜드"], f"{r[RECENT_SHARE]:.1f}%", f"{r[YOY]:+.1f}% 전년 대비", delta_color="off")
     st.caption("최근 12개월 네 브랜드 내 검색지수 비중 · 증감은 같은 브랜드 검색지수의 전년 동기 대비")
 
 
 def overview(news, trend, stats, selected):
-    st.title("경쟁 구도를 한눈에")
+    st.title("브랜드 경쟁 현황")
     st.caption("브랜드별 기사 50건과 24개월 검색 추이로 살펴보는 K-SPA 경쟁 현황")
     chosen = news[news["브랜드"].isin(selected)]
     a,b,c,d = st.columns(4)
@@ -81,6 +89,19 @@ def overview(news, trend, stats, selected):
     b.metric("중복 원문 통합", f"{chosen['원문 링크'].nunique():,}건")
     c.metric("검색 추이", "24개월")
     d.metric("선택 브랜드", f"{len(selected)}개")
+    st.subheader("핵심 보고 요약")
+    report = stats[(stats["구분"]=="전체") & stats["브랜드"].isin(selected)]
+    leader = report.loc[report[RECENT_SHARE].idxmax()]
+    growth = report.loc[report[YOY].idxmax()]
+    dominant = chosen["대표 주제"].value_counts()
+    with st.container(border=True):
+        st.markdown(f"**관심도 선두 · {leader['브랜드']}** — 선택 브랜드 중 최근 12개월 검색지수 비중 {leader[RECENT_SHARE]:.1f}%")
+        st.markdown(f"**전년 대비 변화 최대 · {growth['브랜드']}** — 같은 브랜드의 전년 동기 대비 {growth[YOY]:+.1f}%")
+        top = dominant.max()
+        topics = ' · '.join(dominant[dominant==top].index)
+        st.markdown(f"**뉴스의 주요 의제 · {topics}** — 주제별 집계 최다 {top}건. 브랜드별 50건을 맞춘 표본이므로 보도량 점유율 해석은 제한됩니다.")
+    export = report[["브랜드", RECENT_SHARE, YOY, "네브랜드 내 비중변화_pp"]].rename(columns={RECENT_SHARE:"최근12개월 검색지수 비중_pct",YOY:"전년동기 대비_pct"})
+    download(export, "브랜드_보고요약.csv", "보고용 핵심 지표 CSV", key="report_download")
     st.subheader("검색 관심도와 성장")
     overall = stats[(stats["구분"]=="전체") & stats["브랜드"].isin(selected)]
     metrics(overall)
@@ -122,6 +143,8 @@ def news_page(news, selected):
     if len(date_range)==2:
         frame = frame[(frame["발행일시"].dt.date>=date_range[0]) & (frame["발행일시"].dt.date<=date_range[1])]
     frame = frame.sort_values("발행일시", ascending=False)
+    if frame.empty:
+        st.info("조건에 맞는 기사가 없습니다. 주제·검색어·날짜 범위를 조정해 주세요.")
     st.write(f"**{len(frame)}건** · 고유 원문 {frame['원문 링크'].nunique()}건")
     columns=["브랜드","대표 주제","제목","요약","발행일시","원문 링크"]
     st.dataframe(frame[columns], hide_index=True, width="stretch", height=510,
@@ -169,9 +192,9 @@ def keywords_page(selected):
                               texttemplate="%{x:.0f}" if method=="BoW" else "%{x:.3f}",textposition="outside",cliponaxis=False)
             st.plotly_chart(polish(fig,490,""),width="stretch",key=f"keywords_{method}")
             st.caption("단어 출현 횟수 합계" if method=="BoW" else "문서별 중요도의 평균 · 전체 고유 기사 165개 기준 IDF")
-    st.subheader("워드클라우드")
-    st.image(str(ROOT/meta["워드클라우드"]),width="stretch")
-    st.caption("왼쪽 BoW · 오른쪽 TF-IDF · 글자 크기는 각 방식의 점수에 비례")
+    with st.expander("워드클라우드로 보기", expanded=False):
+        st.image(str(ROOT/meta["워드클라우드"]),width="stretch")
+        st.caption("왼쪽 BoW · 오른쪽 TF-IDF · 글자 크기는 각 방식의 점수에 비례")
     a=group[group["방식"]=="BoW"][["순위","키워드","점수"]].head(20).rename(columns={"키워드":"BoW 키워드","점수":"출현 횟수"})
     b=group[group["방식"]=="TF-IDF"][["순위","키워드","점수"]].head(20).rename(columns={"키워드":"TF-IDF 키워드","점수":"TF-IDF 점수"})
     st.dataframe(a.merge(b,on="순위",how="outer"),hide_index=True,width="stretch")
@@ -250,6 +273,11 @@ def quality_page(news):
         st.dataframe(audit[["브랜드","검색 순위","처리","제목","판단 근거"]],hide_index=True,width="stretch")
         download(audit,"추가수집_검토내역.csv",key="audit_download")
     with tab3:st.dataframe(load("브랜드뉴스_주제분류_기준.csv"),hide_index=True,width="stretch")
+    with st.expander("UI·UX 평가 기준과 개선 내역"):
+        st.caption("내부 기준에 따른 구현 점검입니다. 사용자 사용성 평가 점수나 공식 브랜드 가이드 준수 인증은 아닙니다.")
+        evaluation=load("UI_UX_평가항목.csv")
+        st.dataframe(evaluation, hide_index=True, width="stretch")
+        download(evaluation,"UI_UX_평가항목.csv","UI·UX 평가표 다운로드",key="evaluation_download")
     st.subheader("분석 파일 다운로드")
     for name,label in [("뉴스_BoW_TFIDF_분석결과.zip","키워드 분석 · 워드클라우드 전체"),
                        ("브랜드_검색추이_경쟁사분석.zip","검색 추이 분석 · 그래프 전체")]:
@@ -264,14 +292,18 @@ def main():
     trend=load("브랜드_검색트렌드_분석용.csv")
     stats=load("브랜드_검색트렌드_경쟁지표.csv")
     with st.sidebar:
-        st.markdown("### K-SPA\n경쟁사 인사이트")
+        st.markdown("### K-SPA INSIGHTS\n브랜드 경쟁 분석")
         st.caption("NAVER API HUB · 2026.10.31 분석")
         page=st.radio("탐색",["요약","뉴스 탐색","키워드 비교","검색 추이","수집·정제 내역"],label_visibility="collapsed")
         st.divider()
+        report_mode=st.toggle("보고 모드", help="필터와 분석 기준을 상단에 표시하고 보고용 화면 여백을 적용합니다.")
         selected=st.multiselect("비교 브랜드",BRANDS,default=BRANDS)
         st.caption("뉴스 200건 · 고유 기사 165건\n\n검색 추이 2024.10—2026.09")
         st.divider()
         st.caption("저장된 분석 결과를 표시합니다. 최신 데이터가 자동으로 수집되지는 않습니다.")
+    if report_mode:
+        st.markdown('<div class="report-label">COMPETITIVE INTELLIGENCE / NAVER DATA</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="report-context"><strong>비교 범위</strong>　{" · ".join(selected) or "선택 없음"}<br><strong>분석 기준</strong>　검색 2024.10–2026.09 · 데이터 정리 2026.10.31 · 저장 데이터 기준<br><strong>보고 화면</strong>　{page} · 세부 조건은 아래 필터에 표시</div>', unsafe_allow_html=True)
     if not selected:
         st.info("왼쪽에서 비교할 브랜드를 하나 이상 선택해 주세요.")
         return
